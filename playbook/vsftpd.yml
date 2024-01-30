@@ -1,0 +1,7 @@
+---
+- name: Установка и запуск FTP-сервера vsftpd
+  hosts: ftpserver
+  gather_facts: no
+  become: true
+  roles: 
+    - vsftpd
